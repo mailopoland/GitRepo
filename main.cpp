@@ -1,8 +1,12 @@
 #include <iostream>
-#include <math.h>
+
+#include "add.h"
+#include "power.h"
+#include "multiply.h"
+
 using namespace std;
 
 int main(){
-	cout << pow( (2 * 2 + 4) ,3);
+	cout << pow( add(multiply(2,2), 4) ,3);
 	return 0;
 }
